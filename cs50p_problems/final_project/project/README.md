@@ -1,6 +1,6 @@
 # NUTRITION APP
 ## Video Demo:  <URL HERE>
-![alt text](image.png)
+![alt text](images/image.png)
 ## Description
 This app is designed to make users keep track of their macro nutrients and calories by storing information about the food they consume in a diary. The app will calculate the total intake of calories, protein, carbs and fats. Additionally users can generate a pdf report with all the food information provided, making easy to review and manage their diet.
 
@@ -37,7 +37,7 @@ This app is designed to make users keep track of their macro nutrients and calor
     - Will give three choices to the user:
         - **"Diary"** add food to diary.
             - Print a banner showing the day the food diary is on.
-            ![alt text](image-1.png)
+            ![alt text](images/image-1.png)
             - Call get_food() and get_food_info()
             - if the users calls exit in get_food() will be exited in the get_choice()
         - **"Report"** generate a pdf with all the information.
@@ -56,7 +56,7 @@ This app is designed to make users keep track of their macro nutrients and calor
 4. **get_food():**
     - Prompts user to input a food item
     - Uses fuzzywuzy to sugest a food macht:
-     ![alt text](image-2.png)
+     ![alt text](images/image-2.png)
      - Then prompts user to put the quantity in grams for the food selected
 
 
