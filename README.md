@@ -1,4 +1,4 @@
-# Problems
+# CS50P
 A collection of all the problems solved in CS50's Introduction to Programming with Python course
 ## Problem set:
 0. **Functions, Variables**
