@@ -41,6 +41,10 @@ def get_choice(food_diary, day):
                             next_day = input("Would you like to move on to the next day?<Y/n>").lower().strip()
                             if next_day == "y":
                                 day += 1
+                            elif next_day == "n":
+                                pass
+                            else:
+                                continue
                             save_food_diary(food_diary,day)
                             break
 
@@ -157,14 +161,14 @@ def get_food_info(food_name, food_quantity, data_base, food_diary, day):
     diary = {
         "food": food_name,
         "quantity": food_quantity,
-        "calories": round(food_info["calories"]) * real_quantity,
-        "protein": round(food_info["protein"]) * real_quantity,
-        "carbs": round(food_info["carbs"]) * real_quantity,
-        "fats": round(food_info["fats"]) * real_quantity,
+        "calories": round(food_info["calories"] * real_quantity),
+        "protein": round(food_info["protein"] * real_quantity),
+        "carbs": round(food_info["carbs"] * real_quantity),
+        "fats": round(food_info["fats"] * real_quantity),
     }
-    if day not in food_diary:
-        food_diary[day] = []
-    food_diary[day].append(diary)
+    if str(day) not in food_diary:
+        food_diary[str(day)] = []
+    food_diary[str(day)].append(diary)
 
 
 def save_food_diary(food_diary, day):
